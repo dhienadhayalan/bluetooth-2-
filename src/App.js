@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, Text, View, FlatList, TouchableOpacity, TextInput, Alert} from 'react-native';
 import BluetoothService from './services/BluetoothService';
+import BluetoothScan from './src/BluetoothScan';
 import DeviceRow from './components/DeviceRow';
+
+export default function App() {
+  return <BluetoothScan />;
+}
 
 export default function App() {
   const [devices, setDevices] = useState([]);
